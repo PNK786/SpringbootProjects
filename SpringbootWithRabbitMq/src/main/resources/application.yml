@@ -8,9 +8,13 @@ spring:
 rabbitmq:
   queue:
     name: Java guides
+    json:
+      name: javaGuides_json
 
   exchange:
     name: javaguides_exchange
 
   routing:
     key: javaguides_routing_key
+    json:
+      key: javaGuides_json_key
